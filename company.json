@@ -1,0 +1,211 @@
+{
+  "$comment": "孪穹科技 · 机器可读能力清单（JSON-LD）。用途：贴到公开仓库/知乎/公众号文末/企业信息平台，让搜索引擎与 AI Agent 直接解析。字段遵循 schema.org。",
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://github.com/wangjianxin1988#organization",
+      "name": "北京孪穹科技有限公司",
+      "alternateName": ["孪穹科技", "孪穹数字", "Luanqiong Technology"],
+      "description": "数字孪生、虚拟仿真实训、三维可视化、UE5 沉浸式影片、AI 应用的技术实现与分包服务商。给系统集成商与院校提供技术交付，交付源代码与源文件，支持局域网内网部署。",
+      "slogan": "智慧能源数字孪生 + AI，综合解决方案服务商",
+      "identifier": {
+        "@type": "PropertyValue",
+        "name": "统一社会信用代码",
+        "value": "91110114MAED93A80L"
+      },
+      "telephone": "+86-13261888671",
+      "email": "18801400211@163.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CN",
+        "addressRegion": "北京市",
+        "addressLocality": "北京市"
+      },
+      "areaServed": [
+        { "@type": "Country", "name": "中国" }
+      ],
+      "knowsAbout": [
+        "数字孪生", "虚拟仿真实训", "三维可视化", "UE5 实时渲染", "VR 沉浸式影片",
+        "智慧油田", "应急演练系统", "职业院校实训基地", "数据可视化大屏", "AI 大模型应用"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "telephone": "+86-13261888671",
+          "availableLanguage": ["zh-CN"],
+          "areaServed": "CN"
+        }
+      ],
+      "makesOffer": [
+        { "@type": "Offer", "itemOffered": { "@id": "#service-oil-digital-twin" } },
+        { "@type": "Offer", "itemOffered": { "@id": "#service-vr-training" } },
+        { "@type": "Offer", "itemOffered": { "@id": "#service-3d-visualization" } },
+        { "@type": "Offer", "itemOffered": { "@id": "#service-vr-film" } },
+        { "@type": "Offer", "itemOffered": { "@id": "#service-software-outsourcing" } },
+        { "@type": "Offer", "itemOffered": { "@id": "#service-ai-fde" } }
+      ]
+    },
+
+    {
+      "@type": "Service",
+      "@id": "#service-oil-digital-twin",
+      "name": "智慧油田 AI 数字孪生",
+      "serviceType": "数字孪生系统开发",
+      "provider": { "@id": "https://github.com/wangjianxin1988#organization" },
+      "description": "UE5 实时渲染 + 多源数据中台 + AI 参数推演，覆盖海上采油平台、陆地终端处理厂、井场。支持设备工况实时对接（ModBusTCP 等）、AI 参数优化与风险预警、二三维一体化多源数据引擎。",
+      "audience": { "@type": "BusinessAudience", "audienceType": "能源央企二级单位、油田服务商、系统集成商" },
+      "areaServed": "CN",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "CNY",
+        "description": "按功能项报价；软件类项目 60 个自然日交付周期",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "#service-vr-training",
+      "name": "AI 虚拟仿真实训",
+      "serviceType": "虚拟仿真系统开发",
+      "provider": { "@id": "https://github.com/wangjianxin1988#organization" },
+      "description": "多端实训平台 + 业务仿真实训端 + 实训管理端，含 AI 指导、智能批改、成绩回溯。适用于职业院校实训基地、企业安全培训中心、应急演练与处置流程考核。B/S 架构，浏览器访问，无需安装客户端。",
+      "audience": { "@type": "BusinessAudience", "audienceType": "职业院校、高校、应急管理部门、企业培训中心" },
+      "areaServed": "CN"
+    },
+    {
+      "@type": "Service",
+      "@id": "#service-3d-visualization",
+      "name": "3D 数字孪生可视化",
+      "serviceType": "三维可视化系统开发",
+      "provider": { "@id": "https://github.com/wangjianxin1988#organization" },
+      "description": "配电网、煤矿、船舶、园区、水利等场景的三维模型制作、数字孪生大屏、数据接入与交互系统。",
+      "audience": { "@type": "BusinessAudience", "audienceType": "电网、矿业、港口、水利、园区、系统集成商" },
+      "areaServed": "CN"
+    },
+    {
+      "@type": "Service",
+      "@id": "#service-vr-film",
+      "name": "VR · UE5 定制影片",
+      "serviceType": "沉浸式影片制作",
+      "provider": { "@id": "https://github.com/wangjianxin1988#organization" },
+      "description": "从分镜、角色、场景、动画、渲染到配音的 UE5 沉浸式影片制作；适配三自由度动感影院。可交付 28 个镜头、513 秒级别的成片。",
+      "audience": { "@type": "BusinessAudience", "audienceType": "展馆、纪念馆、文旅项目、党建展厅" },
+      "areaServed": "CN"
+    },
+    {
+      "@type": "Service",
+      "@id": "#service-software-outsourcing",
+      "name": "软件设计开发外包",
+      "serviceType": "软件定制开发",
+      "provider": { "@id": "https://github.com/wangjianxin1988#organization" },
+      "description": "需求对接、页面设计、三维制作及渲染、前端开发、后台对接、测试、培训七段式报价。交付源代码（内网 + 公网两套）与可直接运行的源文件，支持局域网内网访问。",
+      "audience": { "@type": "BusinessAudience", "audienceType": "系统集成商、总包、软件公司" },
+      "areaServed": "CN",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "CNY",
+        "description": "参考报价：配电网数字孪生设计开发 24.1 万元 / 60 自然日（可拆七段）",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "#service-ai-fde",
+      "name": "企业 AI FDE（前沿部署工程）",
+      "serviceType": "企业 AI 落地服务",
+      "provider": { "@id": "https://github.com/wangjianxin1988#organization" },
+      "description": "面向企业的 AI 应用落地：大模型评测、智能批改、多角色协同、知识库与 Agent 建设。按业务结果交付，不只交工具。",
+      "audience": { "@type": "BusinessAudience", "audienceType": "中小企业、院校、企业信息化部门" },
+      "areaServed": "CN"
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "你们做过油田或能源行业的数字孪生吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "参与过中海油系统安全生产数字化培训教室的软件交付，4 个工艺模块（有缆测调下管柱、无缆测调下管柱、地面设备铺装、智能井故障排查）于 2026 年 3 月全部通过终验。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "交付的时候给源代码吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "给。交付清单包含源代码（内网、公网两套地址）和可直接运行的源文件，支持局域网内网访问，甲方 IT 不需要依赖我们做后续维护。案例中配电网数字孪生项目的交付清单原文即写明这一点。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "虚拟仿真实训系统需要学生装客户端吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不需要。采用 B/S 架构，浏览器访问即可，机房升级或换设备不受影响；也提供局域网内网部署版本。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "一个软件类项目大概多久能交付？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "软件类项目标准交付周期为 60 个自然日，按需求对接、页面设计、三维制作及渲染、前端开发、后台对接、测试、培训七段拆分，每段都有交付物与验收标准，工期可写进合同。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "你们做 VR 沉浸式影片吗？能到什么水平？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "做过某国家级革命纪念馆的 UE5 沉浸式 VR 影片，28 个镜头、513 秒成片，配 16 座三自由度动感影院，覆盖分镜、角色、场景、动画、渲染、配音全流程。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "你们是总包还是分包？会不会抢我的客户？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "我们主要做技术分包，不越过合作方直接接触他的甲方，商务对接走合作方。报价按合作方框架来，只提供功能项成本与工期。需要投标主体时，也可以和有资质的集成商/总包组联合体，由对方投标、我们做技术交付。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "报价怎么算？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "按功能项拆分报价：需求对接、页面设计、三维制作及渲染、前端开发、后台对接、测试、培训。参考：配电网数字孪生设计开发 24.1 万元 / 60 自然日；虚拟仿真实训与三维可视化按场景复杂度单独评估。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "你们在哪个城市？能驻场吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "公司在北京，项目覆盖天津、山东、河北等地。可以驻场，按人天计费；也可以远程开发 + 关键节点到场。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "怎么联系你们？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "电话 / 微信 13261888671（王建信），邮箱 18801400211@163.com。工作日 9:00–21:00。把项目需求发过来，可以先免费出一版功能对照表与报价结构。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "你们做过院校实训基地项目吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "做过。给教育平台商交付过 AI 虚拟仿真教学系统（60 个工作日，含大模型评测与多角色协同演练）；核心成员参与过电力、建筑、港口、食品工业四个行业的虚拟仿真实训项目，单项目合同额 24 万–143.5 万。"
+          }
+        }
+      ]
+    }
+  ]
+}
